@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "548041341757",
+    "firebase_url": "https://agile-fbb89-default-rtdb.firebaseio.com",
+    "project_id": "agile-fbb89",
+    "storage_bucket": "agile-fbb89.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548041341757:android:8c4df2976fd2c89e8f6354",
+        "android_client_info": {
+          "package_name": "com.pro.electronic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTRon7ZK92w4MW0Iq75Y5XoSIT_GA195U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
