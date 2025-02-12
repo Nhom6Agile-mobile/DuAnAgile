@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import com.pro.electronic.fragment.AccountFragment;
+import com.pro.electronic.fragment.HistoryFragment;
 import com.pro.electronic.fragment.HomeFragment;
 
 public class MyViewPagerAdapter extends FragmentStateAdapter {
