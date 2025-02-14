@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.pro.electronic.R;
-//import com.pro.electronic.activity.admin.AdminMainActivity;
+import com.pro.electronic.activity.admin.AdminMainActivity;
 import com.pro.electronic.model.User;
 import com.pro.electronic.prefs.DataStoreManager;
 import com.pro.electronic.utils.Constant;
@@ -145,7 +145,7 @@ public class LoginActivity extends BaseActivity {
 
     private void goToMainActivity() {
         if (DataStoreManager.getUser().isAdmin()) {
-//            GlobalFunction.startActivity(this, AdminMainActivity.class);
+            GlobalFunction.startActivity(this, AdminMainActivity.class);
         } else {
             GlobalFunction.startActivity(this, MainActivity.class);
         }

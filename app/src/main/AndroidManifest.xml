@@ -99,9 +99,9 @@
 <!--            android:exported="false"-->
 <!--            android:name="com.pro.electronic.activity.AddressActivity" />-->
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.admin.AdminMainActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.admin.AdminMainActivity" />
 
 <!--        <activity-->
 <!--            android:exported="false"-->
@@ -115,17 +115,17 @@
 <!--            android:exported="false"-->
 <!--            android:name="com.pro.electronic.activity.admin.AdminAddVoucherActivity" />-->
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.admin.AdminAddCategoryActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.admin.AdminAddCategoryActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.admin.AdminAddProductActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.admin.AdminAddProductActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.admin.AdminProductByCategoryActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.admin.AdminProductByCategoryActivity" />
 
 <!--        <activity-->
 <!--            android:exported="false"-->
