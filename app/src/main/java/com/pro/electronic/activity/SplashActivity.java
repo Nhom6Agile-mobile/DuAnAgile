@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.pro.electronic.R;
-//import com.pro.electronic.activity.admin.AdminMainActivity;
+import com.pro.electronic.activity.admin.AdminMainActivity;
 import com.pro.electronic.prefs.DataStoreManager;
 import com.pro.electronic.utils.GlobalFunction;
 import com.pro.electronic.utils.StringUtil;
@@ -26,7 +26,7 @@ public class SplashActivity extends BaseActivity {
         if (DataStoreManager.getUser() != null
                 && !StringUtil.isEmpty(DataStoreManager.getUser().getEmail())) {
             if (DataStoreManager.getUser().isAdmin()) {
-//                GlobalFunction.startActivity(this, AdminMainActivity.class);
+                GlobalFunction.startActivity(this, AdminMainActivity.class);
             } else {
                 GlobalFunction.startActivity(this, MainActivity.class);
             }
