@@ -7,6 +7,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.pro.electronic.fragment.admin.AdminCategoryFragment;
 import com.pro.electronic.fragment.admin.AdminOrderFragment;
+import com.pro.electronic.fragment.admin.AdminProductFragment;
+import com.pro.electronic.fragment.admin.AdminSettingsFragment;
 
 public class AdminViewPagerAdapter extends FragmentStateAdapter {
 
