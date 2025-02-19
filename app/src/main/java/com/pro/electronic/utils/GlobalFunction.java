@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-//import com.pro.electronic.listener.IGetDateListener;
+import com.pro.electronic.listener.IGetDateListener;
 import com.pro.electronic.prefs.DataStoreManager;
 
 import java.text.Normalizer;
@@ -60,29 +60,29 @@ public class GlobalFunction {
         return pattern.matcher(nfdNormalizedString).replaceAll("");
     }
 
-//    public static void showDatePicker(Context context, String currentDate, final IGetDateListener getDateListener) {
-//        Calendar mCalendar = Calendar.getInstance();
-//        int currentDay = mCalendar.get(Calendar.DATE);
-//        int currentMonth = mCalendar.get(Calendar.MONTH);
-//        int currentYear = mCalendar.get(Calendar.YEAR);
-//        mCalendar.set(currentYear, currentMonth, currentDay);
-//
-//        if (!StringUtil.isEmpty(currentDate)) {
-//            String[] split = currentDate.split("/");
-//            currentDay = Integer.parseInt(split[0]);
-//            currentMonth = Integer.parseInt(split[1]);
-//            currentYear = Integer.parseInt(split[2]);
-//            mCalendar.set(currentYear, currentMonth - 1, currentDay);
-//        }
-//
-//        DatePickerDialog.OnDateSetListener callBack = (view, year, monthOfYear, dayOfMonth) -> {
-//            String date = StringUtil.getDoubleNumber(dayOfMonth) + "/" +
-//                    StringUtil.getDoubleNumber(monthOfYear + 1) + "/" + year;
-//            getDateListener.getDate(date);
-//        };
-//        DatePickerDialog datePicker = new DatePickerDialog(context,
-//                callBack, mCalendar.get(Calendar.YEAR), mCalendar.get(Calendar.MONTH),
-//                mCalendar.get(Calendar.DATE));
-//        datePicker.show();
-//    }
+    public static void showDatePicker(Context context, String currentDate, final IGetDateListener getDateListener) {
+        Calendar mCalendar = Calendar.getInstance();
+        int currentDay = mCalendar.get(Calendar.DATE);
+        int currentMonth = mCalendar.get(Calendar.MONTH);
+        int currentYear = mCalendar.get(Calendar.YEAR);
+        mCalendar.set(currentYear, currentMonth, currentDay);
+
+        if (!StringUtil.isEmpty(currentDate)) {
+            String[] split = currentDate.split("/");
+            currentDay = Integer.parseInt(split[0]);
+            currentMonth = Integer.parseInt(split[1]);
+            currentYear = Integer.parseInt(split[2]);
+            mCalendar.set(currentYear, currentMonth - 1, currentDay);
+        }
+
+        DatePickerDialog.OnDateSetListener callBack = (view, year, monthOfYear, dayOfMonth) -> {
+            String date = StringUtil.getDoubleNumber(dayOfMonth) + "/" +
+                    StringUtil.getDoubleNumber(monthOfYear + 1) + "/" + year;
+            getDateListener.getDate(date);
+        };
+        DatePickerDialog datePicker = new DatePickerDialog(context,
+                callBack, mCalendar.get(Calendar.YEAR), mCalendar.get(Calendar.MONTH),
+                mCalendar.get(Calendar.DATE));
+        datePicker.show();
+    }
 }
