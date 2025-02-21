@@ -17,8 +17,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 import com.pro.electronic.MyApplication;
 import com.pro.electronic.R;
-//import com.pro.electronic.activity.ReceiptOrderActivity;
-//import com.pro.electronic.activity.TrackingOrderActivity;
 import com.pro.electronic.adapter.OrderAdapter;
 import com.pro.electronic.model.Order;
 import com.pro.electronic.model.TabOrder;
@@ -81,14 +79,14 @@ public class OrderFragment extends Fragment {
             public void onClickTrackingOrder(long orderId) {
                 Bundle bundle = new Bundle();
                 bundle.putLong(Constant.ORDER_ID, orderId);
-//                GlobalFunction.startActivity(getActivity(), TrackingOrderActivity.class, bundle);
+                GlobalFunction.startActivity(getActivity(), TrackingOrderActivity.class, bundle);
             }
 
             @Override
             public void onClickReceiptOrder(Order order) {
                 Bundle bundle = new Bundle();
                 bundle.putLong(Constant.ORDER_ID, order.getId());
-//                GlobalFunction.startActivity(getActivity(), ReceiptOrderActivity.class, bundle);
+                GlobalFunction.startActivity(getActivity(), ReceiptOrderActivity.class, bundle);
             }
         });
         rcvOrder.setAdapter(orderAdapter);

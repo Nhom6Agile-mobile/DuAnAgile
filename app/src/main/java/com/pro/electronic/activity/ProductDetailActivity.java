@@ -172,16 +172,16 @@ public class ProductDetailActivity extends BaseActivity {
         });
 
 
-//        tvAddOrder.setOnClickListener(view -> {
-//            if (!isProductInCart()) {
-//                ProductDatabase.getInstance(ProductDetailActivity.this).productDAO().insertProduct(mProduct);
-//            } else {
-//                ProductDatabase.getInstance(ProductDetailActivity.this).productDAO().updateProduct(mProduct);
-//            }
-//            GlobalFunction.startActivity(ProductDetailActivity.this, CartActivity.class);
-//            EventBus.getDefault().post(new DisplayCartEvent());
-//            finish();
-//        });
+        tvAddOrder.setOnClickListener(view -> {
+            if (!isProductInCart()) {
+                ProductDatabase.getInstance(ProductDetailActivity.this).productDAO().insertProduct(mProduct);
+            } else {
+                ProductDatabase.getInstance(ProductDetailActivity.this).productDAO().updateProduct(mProduct);
+            }
+            GlobalFunction.startActivity(ProductDetailActivity.this, CartActivity.class);
+            EventBus.getDefault().post(new DisplayCartEvent());
+            finish();
+        });
     }
 
     private void calculatorTotalPrice() {

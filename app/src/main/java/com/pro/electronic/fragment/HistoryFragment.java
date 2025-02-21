@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.pro.electronic.R;
 import com.pro.electronic.activity.MainActivity;
-//import com.pro.electronic.adapter.OrderPagerAdapter;
+import com.pro.electronic.adapter.OrderPagerAdapter;
 import com.pro.electronic.model.TabOrder;
 
 import java.util.ArrayList;
@@ -67,10 +67,10 @@ public class HistoryFragment extends Fragment {
         list.add(new TabOrder(TabOrder.TAB_ORDER_DONE, getString(R.string.label_done)));
         if (getActivity() == null) return;
         viewPagerOrder.setOffscreenPageLimit(list.size());
-//        OrderPagerAdapter adapter = new OrderPagerAdapter(getActivity(), list);
-//        viewPagerOrder.setAdapter(adapter);
-//        new TabLayoutMediator(tabOrder, viewPagerOrder,
-//                (tab, position) -> tab.setText(list.get(position).getName().toLowerCase()))
-//                .attach();
+        OrderPagerAdapter adapter = new OrderPagerAdapter(getActivity(), list);
+        viewPagerOrder.setAdapter(adapter);
+        new TabLayoutMediator(tabOrder, viewPagerOrder,
+                (tab, position) -> tab.setText(list.get(position).getName().toLowerCase()))
+                .attach();
     }
 }
