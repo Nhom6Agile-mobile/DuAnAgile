@@ -17,6 +17,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 import com.pro.electronic.MyApplication;
 import com.pro.electronic.R;
+import com.pro.electronic.activity.ReceiptOrderActivity;
+import com.pro.electronic.activity.TrackingOrderActivity;
 import com.pro.electronic.adapter.OrderAdapter;
 import com.pro.electronic.model.Order;
 import com.pro.electronic.model.TabOrder;
