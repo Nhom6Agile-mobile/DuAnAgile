@@ -51,37 +51,37 @@
             android:exported="false"
             android:name="com.pro.electronic.activity.RegisterActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.ProductDetailActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.ProductDetailActivity" />
 
 <!--        <activity-->
 <!--            android:exported="false"-->
 <!--            android:name="com.pro.electronic.activity.VoucherActivity" />-->
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.RatingReviewActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.RatingReviewActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.PaymentMethodActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.PaymentMethodActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.CartActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.CartActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.PaymentActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.PaymentActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.ReceiptOrderActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.ReceiptOrderActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.TrackingOrderActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.TrackingOrderActivity" />
 
         <activity
             android:exported="false"
@@ -95,9 +95,9 @@
             android:exported="false"
             android:name="com.pro.electronic.activity.ForgotPasswordActivity" />
 
-<!--        <activity-->
-<!--            android:exported="false"-->
-<!--            android:name="com.pro.electronic.activity.AddressActivity" />-->
+        <activity
+            android:exported="false"
+            android:name="com.pro.electronic.activity.AddressActivity" />
 
         <activity
             android:exported="false"

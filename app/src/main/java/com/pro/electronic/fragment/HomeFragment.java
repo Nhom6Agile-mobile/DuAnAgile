@@ -25,7 +25,7 @@ import com.pro.electronic.MyApplication;
 import com.pro.electronic.R;
 import com.pro.electronic.activity.ProductDetailActivity;
 import com.pro.electronic.adapter.BannerViewPagerAdapter;
-//import com.pro.electronic.adapter.CategoryPagerAdapter;
+import com.pro.electronic.adapter.CategoryPagerAdapter;
 import com.pro.electronic.event.SearchKeywordEvent;
 import com.pro.electronic.model.Category;
 import com.pro.electronic.model.Product;
@@ -186,7 +186,7 @@ public class HomeFragment extends Fragment {
                         listCategory.add(category);
                     }
                 }
-//                displayTabsCategory();
+                displayTabsCategory();
             }
 
             @Override
@@ -198,15 +198,15 @@ public class HomeFragment extends Fragment {
                 .addValueEventListener(mCategoryValueEventListener);
     }
 
-//    private void displayTabsCategory() {
-//        if (getActivity() == null || listCategory == null || listCategory.isEmpty()) return;
-//        viewPagerCategory.setOffscreenPageLimit(listCategory.size());
-//        CategoryPagerAdapter adapter = new CategoryPagerAdapter(getActivity(), listCategory);
-//        viewPagerCategory.setAdapter(adapter);
-//        new TabLayoutMediator(tabCategory, viewPagerCategory,
-//                (tab, position) -> tab.setText(listCategory.get(position).getName().toLowerCase()))
-//                .attach();
-//    }
+    private void displayTabsCategory() {
+        if (getActivity() == null || listCategory == null || listCategory.isEmpty()) return;
+        viewPagerCategory.setOffscreenPageLimit(listCategory.size());
+        CategoryPagerAdapter adapter = new CategoryPagerAdapter(getActivity(), listCategory);
+        viewPagerCategory.setAdapter(adapter);
+        new TabLayoutMediator(tabCategory, viewPagerCategory,
+                (tab, position) -> tab.setText(listCategory.get(position).getName().toLowerCase()))
+                .attach();
+    }
 
     private void searchProduct() {
         String strKey = edtSearchName.getText().toString().trim();

@@ -143,8 +143,8 @@ public class MainActivity extends BaseActivity {
             String strAmount = amount + Constant.CURRENCY;
             tvAmount.setText(strAmount);
         }
-//        layoutCartBottom.setOnClickListener(v ->
-//                GlobalFunction.startActivity(this, CartActivity.class));
+        layoutCartBottom.setOnClickListener(v ->
+                GlobalFunction.startActivity(this, CartActivity.class));
     }
 
     public ViewPager2 getViewPager2() {
